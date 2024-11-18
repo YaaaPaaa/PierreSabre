@@ -14,14 +14,21 @@ public class HistoireTP4 {
 //        prof.perdreArgent(2);
 //        System.out.println(prof.acheter("un kimono", 50));
         
-        /*Partie 2 TP4*/
+        /*Partie 2 TP4 - 2*/
         Commercant marco = new Commercant ("Marco", "thé", 20);
+        Yakuza yaku = new Yakuza ("Yaku Le Noir", "whisky", 30, "Warsong", 0);
         
+        /*Partie 2 TP4 - 2.1*/
         System.out.println(marco.direBonjour());
         marco.seFaireExtorquer();
-        System.out.println(marco.getArgent()); //Test pour voir que l'argent est bien retiré.
+//        System.out.println(marco.getArgent()); //Test pour voir que l'argent est bien retiré.
         marco.recevoir(15);
         System.out.println(marco.boire());
-        System.out.println(marco.getArgent()); //Test pour voir que l'argent est bien donné.
+//        System.out.println(marco.getArgent()); //Test pour voir que l'argent est bien donné.
+        
+        /*Partie 2 TP4 - 2.2*/
+        System.out.println(yaku.direBonjour());
+        yaku.extorquer(marco);
+        
 	}
 }

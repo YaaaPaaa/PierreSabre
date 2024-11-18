@@ -10,7 +10,7 @@ public class Humain {
 		this.boisson = boisson;
 		this.argent = argent;
 	}
-	
+
 	public String getNom() {
 		return nom;
 	}
@@ -20,7 +20,7 @@ public class Humain {
 	}
 	
 	public String direBonjour() {
-		return parler("Bonjour ! Je m'appelle " + nom + " et j'aime boire du " + boisson);
+		return parler("Bonjour ! Je m'appelle " + nom + " et j'aime boire du " + boisson + ".");
 	}
 	
 	public String boire() {
