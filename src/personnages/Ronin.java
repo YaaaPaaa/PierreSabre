@@ -1,4 +1,4 @@
-package histoire;
+package personnages;
 
 public class Ronin extends Humain{
 	private int honneur = 1;
@@ -7,7 +7,7 @@ public class Ronin extends Humain{
 		super(nom, boisson, argent);
 	}
 	
-	void donner(Commercant beneficiaire) {
+	public void donner(Commercant beneficiaire) {
 		int don = getArgent()/10;
 		System.out.println(parler(beneficiaire.getNom() + " prend ces " + don + " sous."));
 		beneficiaire.recevoir(don);
