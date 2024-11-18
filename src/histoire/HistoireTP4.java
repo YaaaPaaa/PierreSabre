@@ -3,7 +3,7 @@ package histoire;
 public class HistoireTP4 {
 
 	public static void main(String[] args) {
-		/*Partie 1 TP4*/
+		/*TP4 - 1*/
 //		Humain prof = new Humain ("Prof", "kombucha", 54);
 //		
 //		System.out.println(prof.direBonjour());
@@ -14,10 +14,10 @@ public class HistoireTP4 {
 //        prof.perdreArgent(2);
 //        System.out.println(prof.acheter("un kimono", 50));
         
-        /*Partie 2 TP4 - 2*/
+        /*TP4 - 2*/
         Commercant marco = new Commercant ("Marco", "thé", 20);
         
-        /*Partie 2 TP4 - 2.1*/
+        /*TP4 - 2.1*/
         System.out.println(marco.direBonjour());
         marco.seFaireExtorquer();
 //        System.out.println(marco.getArgent()); //Test pour voir que l'argent est bien retiré.
@@ -25,14 +25,17 @@ public class HistoireTP4 {
         System.out.println(marco.boire());
 //        System.out.println(marco.getArgent()); //Test pour voir que l'argent est bien donné.
         
-        /*Partie 2 TP4 - 2.2*/
+        /*TP4 - 2.2*/
         Yakuza yaku = new Yakuza ("Yaku Le Noir", "whisky", 30, "Warsong");
         System.out.println(yaku.direBonjour());
         yaku.extorquer(marco);
         
-        /*Partie 2 TP4 - 2.3*/
+        /*TP4 - 2.3*/
         Ronin roro = new Ronin ("Roro", "shochu", 60);
         System.out.println(roro.direBonjour());
         roro.donner(marco);
+        
+        /*TP4 - 3*/
+        roro.provoquer(yaku);
 	}
 }
