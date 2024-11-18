@@ -16,7 +16,6 @@ public class HistoireTP4 {
         
         /*Partie 2 TP4 - 2*/
         Commercant marco = new Commercant ("Marco", "thé", 20);
-        Yakuza yaku = new Yakuza ("Yaku Le Noir", "whisky", 30, "Warsong", 0);
         
         /*Partie 2 TP4 - 2.1*/
         System.out.println(marco.direBonjour());
@@ -27,8 +26,13 @@ public class HistoireTP4 {
 //        System.out.println(marco.getArgent()); //Test pour voir que l'argent est bien donné.
         
         /*Partie 2 TP4 - 2.2*/
+        Yakuza yaku = new Yakuza ("Yaku Le Noir", "whisky", 30, "Warsong");
         System.out.println(yaku.direBonjour());
         yaku.extorquer(marco);
         
+        /*Partie 2 TP4 - 2.3*/
+        Ronin roro = new Ronin ("Roro", "shochu", 60);
+        System.out.println(roro.direBonjour());
+        roro.donner(marco);
 	}
 }
