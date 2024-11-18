@@ -20,7 +20,7 @@ public class Humain {
 	}
 	
 	public String direBonjour() {
-		return parler("Bonjour ! Je mâ€™appelle " + nom + " et jâ€™aime boire du " + boisson);
+		return parler("Bonjour ! Je m'appelle " + nom + " et j'aime boire du " + boisson);
 	}
 	
 	public String boire() {
@@ -29,9 +29,9 @@ public class Humain {
 	
 	public String acheter(String bien, int prix) {
 		if (argent >= prix) {
-            return parler("J'ai " + argent + " sous en poche. Je vais pouvoir m'offrir " + bien + " Ã  " + prix + " sous.");
+            return parler("J'ai " + argent + " sous en poche. Je vais pouvoir m'offrir " + bien + " à " + prix + " sous.");
         } else {
-            return parler("Je n'ai plus que " + argent + " sous en poche. Je ne peux mÃªme pas m'offrir " + bien + " Ã  " + prix + " sous.");
+            return parler("Je n'ai plus que " + argent + " sous en poche. Je ne peux même pas m'offrir " + bien + " à " + prix + " sous.");
         }
 	}
 	
